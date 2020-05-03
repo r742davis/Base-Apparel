@@ -3,6 +3,7 @@
   --red-desat: hsl(0, 36%, 70%);
   --red-soft: hsl(0, 93%, 68%);
   --neutral: hsl(0, 6%, 24%);
+  --input: #ebe1e2;
   --white: white;
   --linear-grad1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --linear-grad2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); }
@@ -16,18 +17,23 @@
 
 .container {
   display: flex;
-  background: var(--linear-gradient1); }
+  background: var(--linear-grad1); }
 
 .details {
   display: flex;
   flex-direction: column;
+  flex-basis: 60%;
   padding: 100px 200px 100px 200px; }
 
+.landing-picture {
+  flex-basis: 40%; }
+
 .description {
-  height: auto; }
+  height: auto;
+  border: 1px solid turquoise; }
 
 .description__header h1 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
   letter-spacing: 1rem;
   text-transform: uppercase;
@@ -39,25 +45,28 @@
 
 .description__main p {
   color: var(--red-desat);
-  line-height: 32px; }
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .description__main input {
-  position: relative;
-  border: 1px solid #f8bfbf;
+  position: block;
+  border: 1px solid var(--input);
   border-radius: 3rem;
   height: 3rem;
   width: 100%;
-  padding-left: 1rem; }
+  padding-left: 2rem;
+  outline: none; }
+
+.description__main input::placeholder {
+  color: var(--input); }
 
 .description__main button {
-  position: relative;
-  height: 3rem;
-  width: 20%;
-  right: 2rem;
-  border: 1px solid #f8bfbf;
-  border-radius: 3rem;
   background: var(--linear-grad2);
-  color: var(--white); }
-
-.landing-picture {
-  width: 40%; }
+  color: var(--white);
+  height: 3rem;
+  width: 6rem;
+  right: 2rem;
+  margin-right: 3rem;
+  border: 1px solid #f8bfbf;
+  border-radius: 3rem; }
