@@ -17,20 +17,22 @@
 
 .container {
   display: flex;
+  width: 1440px;
   background: var(--linear-grad1); }
 
 .details {
   display: flex;
   flex-direction: column;
-  flex-basis: 60%;
-  padding: 100px 200px 100px 200px; }
+  justify-content: space-between;
+  width: 60%;
+  border: 1px solid red;
+  padding: 5% 15% 10% 15%; }
 
 .landing-picture {
-  flex-basis: 40%; }
+  width: 40%; }
 
 .description {
-  height: auto;
-  border: 1px solid turquoise; }
+  height: auto; }
 
 .description__header h1 {
   font-size: 4rem;
@@ -43,30 +45,46 @@
   font-weight: 300;
   color: var(--red-desat); }
 
+.description__header h1:nth-child(2), .description__header h1:nth-child(3) {
+  margin-top: 10px; }
+
 .description__main p {
   color: var(--red-desat);
   line-height: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.description__main input {
-  position: block;
+.description__input-container {
+  position: relative; }
+
+.description__main input[type="email"] {
+  color: var(--red-desat);
+  position: relative;
   border: 1px solid var(--input);
   border-radius: 3rem;
-  height: 3rem;
+  height: 3.5rem;
   width: 100%;
   padding-left: 2rem;
-  outline: none; }
+  outline-color: var(--input); }
 
-.description__main input::placeholder {
+.description__main input[type="email"]::placeholder {
   color: var(--input); }
 
-.description__main button {
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0; }
+
+.description__main button[type="submit"] {
   background: var(--linear-grad2);
   color: var(--white);
-  height: 3rem;
+  position: absolute;
+  height: 3.5rem;
   width: 6rem;
-  right: 2rem;
-  margin-right: 3rem;
+  right: 0.01rem;
   border: 1px solid #f8bfbf;
-  border-radius: 3rem; }
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  box-shadow: 0px 10px 50px -5px #ce9797;
+  outline: none;
+  cursor: pointer; }
