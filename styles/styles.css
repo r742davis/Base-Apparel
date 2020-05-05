@@ -6,7 +6,8 @@
   --input: #ebe1e2;
   --white: white;
   --linear-grad1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  --linear-grad2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); }
+  --linear-grad2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --hover-shadow: #e9c2c3; }
 
 * {
   margin: 0;
@@ -65,7 +66,8 @@
   height: 3.5rem;
   width: 100%;
   padding-left: 2rem;
-  outline-color: var(--input); }
+  outline-color: none;
+  z-index: 10; }
 
 .description__main input[type="email"]::placeholder {
   color: var(--input); }
@@ -85,6 +87,11 @@
   border-radius: 3rem;
   font-size: 2rem;
   font-weight: 300;
-  box-shadow: 0px 10px 50px -5px #ce9797;
+  box-shadow: 0px 8px 32px -8px var(--red-desat);
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 20; }
+
+.description__main button[type="submit"]:hover {
+  background: #f8bfbf;
+  box-shadow: 0px 8px 32px -8px var(--neutral); }
