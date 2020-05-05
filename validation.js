@@ -1,8 +1,13 @@
+document.getElementById("input").addEventListener("valid", () => {
+  console.log("valid!!!")
+})
+
+
 function checkValidation(event) {
   event.preventDefault();
-  let input = document.getElementsByClassName("description__input")[0];
-  let errorArrow = document.querySelector(".description__error");
-  let errorMessage = document.querySelector(".description__error-message");
+  let input = document.getElementById("input");
+  let errorArrow = document.getElementById("error");
+  let errorMessage = document.getElementById("error-message");
 
   if (!input.checkValidity()) {
     input.style.border = "none";

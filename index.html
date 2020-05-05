@@ -27,7 +27,7 @@
             <h1>Soon</h1>
           </header>
           <main class="description__main">
-            <p class="description__intro-message">
+            <p class="description__intro-message" id="intro-message">
               Hello fellow shoppers! We're currently building our new fashion
               store. Add your email below to stay up-to-date with announcements
               and our launch deals.
@@ -36,17 +36,19 @@
             <form class="description__input-container">
               <input 
                 class="description__input"
+                id="input"
                 type="email" 
                 placeholder="Email Address" 
                 required />
-              <span class="description__error"><img src="./images/icon-error.svg"/></span>
+              <span class="description__error" id="error"><img src="./images/icon-error.svg"/></span>
               <button 
                 type="submit" 
                 class="description__main-submit" 
                 onClick="checkValidation(event)">
                 <span><img src="./images/icon-arrow.svg"/></span>
               </button>
-              <p class="description__error-message">Please provide a valid email</p>
+              <p class="description__error-message"
+              id="error-message">Please provide a valid email</p>
             </form>
           </main>
         </div>
