@@ -48,7 +48,7 @@
   }
 }
 
-.description__main p {
+.description__intro-message {
   color: var(--red-desat);
   line-height: 2rem;
   margin-top: 2rem;
@@ -124,4 +124,27 @@
 
 .description__validation {
   border: 2px solid red;
+}
+
+.description__error {
+  display: none;
+}
+
+.description__error--active {
+  position: absolute;
+  right: 25%;
+  top: 20%;
+  border: 1px solid turquoise;
+}
+
+.description__error-message {
+  display: none;
+}
+
+.description__error-message--active {
+  font-size: 0.75rem;
+  color: red;
+  margin-left: 2rem; 
+  margin-top: 0.5rem;
+  transition: 2s;
 }
