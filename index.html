@@ -34,8 +34,18 @@
             </p>
 
             <form class="description__input-container" method="post">
-              <input type="email" placeholder="Email Address" required />
-              <button type="submit" class="description__main-submit"><span>></span></button>
+              <input 
+                class="description__input"
+                type="email" 
+                placeholder="Email Address" 
+                required />
+              <!-- <span><img src="./images/icon-error.svg"/></span> -->
+              <button 
+                type="submit" 
+                class="description__main-submit" 
+                onClick="checkValidation()">
+                <span><img src="./images/icon-arrow.svg"/></span>
+              </button>
             </form>
           </main>
         </div>
@@ -56,5 +66,6 @@
         >. Coded by <a href="#">Richard Davis</a>.
       </p>
     </footer> -->
+    <script type="text/javascript" src="validation.js"></script>
   </body>
 </html>
