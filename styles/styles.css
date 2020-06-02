@@ -136,6 +136,11 @@
 .description__main input[type="email"]::placeholder {
   color: var(--input); }
 
+@media (max-width: 375px) {
+  .description__main input[type="email"] {
+    font-size: 0.8rem;
+    height: 3rem; } }
+
 [placeholder]:focus::-webkit-input-placeholder {
   transition: opacity 0.5s 0.5s ease;
   opacity: 0; }
@@ -161,7 +166,7 @@
 
 .description__main button[type="submit"]:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   height: 3.5rem;
@@ -173,6 +178,13 @@
   z-index: 2;
   opacity: 0; }
 
+@media (max-width: 375px) {
+  .description__main button[type="submit"]:after {
+    top: -0.1rem;
+    font-size: 0.5rem;
+    width: 4.5rem;
+    height: 3.1rem; } }
+
 .description__main button[type="submit"]:hover:after {
   opacity: 1;
   box-shadow: 0px 16px 32px -8px rgba(0, 0, 0, 0.25);
@@ -182,6 +194,12 @@
   font-size: 2rem;
   position: relative;
   z-index: 3; }
+
+@media (max-width: 375px) {
+  .description__main button[type="submit"] {
+    font-size: 0.5rem;
+    width: 4.5rem;
+    height: 3rem; } }
 
 .description__validation {
   border: 2px solid red; }
@@ -195,6 +213,10 @@
   top: 20%;
   animation: jello-vertical 0.5s both; }
 
+@media (max-width: 375px) {
+  .description__error--active {
+    top: 15%; } }
+
 .description__error-message {
   opacity: 0;
   font-size: 0.75rem;
@@ -206,8 +228,12 @@
   color: red;
   margin-left: 2rem;
   margin-top: 0.5rem;
-  animation: opacity 0.5s both;
+  animation: opacity 0.25s both;
   animation-delay: 0.5s; }
+
+@media (max-width: 375px) {
+  .description__error-message--active {
+    text-align: left; } }
 
 @keyframes opacity {
   0% {
@@ -215,7 +241,7 @@
   25% {
     opacity: 0.25; }
   50% {
-    opacity: 0.50; }
+    opacity: 0.5; }
   75% {
     opacity: 0.75; }
   100% {
