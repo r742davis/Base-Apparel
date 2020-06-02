@@ -32,7 +32,7 @@
     align-items: center;
     height: 100vh; } }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .container {
     width: 100%;
     height: 800px; } }
@@ -52,12 +52,12 @@
     width: 100%;
     height: 100vh; } }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .details {
     background: none;
     padding: 0; } }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .logo {
     padding: 2rem 0 2rem 2rem; }
   .logo img {
@@ -73,7 +73,7 @@
 .landing-picture__mobile {
   display: none; }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .landing-picture__mobile {
     display: block;
     width: 100%; } }
@@ -86,7 +86,7 @@
     transition: 0.5s;
     max-width: 600px; } }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .description {
     padding: 0 2rem 0 2rem;
     text-align: center; } }
@@ -105,7 +105,7 @@
 .description__header h1:nth-child(2), .description__header h1:nth-child(3) {
   margin-top: 10px; }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .description__header h1 {
     font-size: 2.4rem;
     letter-spacing: 0.75rem;
@@ -120,7 +120,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .description__intro-message {
     font-size: 0.8rem;
     line-height: 1.6rem; } }
@@ -141,7 +141,7 @@
 .description__main input[type="email"]::placeholder {
   color: var(--input); }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .description__main input[type="email"] {
     font-size: 0.8rem;
     height: 3rem; } }
@@ -183,7 +183,7 @@
   z-index: 2;
   opacity: 0; }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .description__main button[type="submit"]:after {
     top: -0.1rem;
     font-size: 0.5rem;
@@ -200,7 +200,7 @@
   position: relative;
   z-index: 3; }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .description__main button[type="submit"] {
     font-size: 0.5rem;
     width: 4.5rem;
@@ -218,7 +218,7 @@
   top: 20%;
   animation: jello-vertical 0.5s both; }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .description__error--active {
     top: 15%; } }
 
@@ -236,7 +236,7 @@
   animation: opacity 0.25s both;
   animation-delay: 0.5s; }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .description__error-message--active {
     text-align: left; } }
 
