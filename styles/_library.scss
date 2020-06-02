@@ -10,3 +10,20 @@
   --hover-shadow: #e9c2c3;
 }
 
+$breakpoints: (
+  'mobile': 375px,
+  'small': 850px,
+  'medium': 1000px,
+  'large': 1250px,
+  'xl': 1400px
+)
+!default;
+// Mixin that responds to @include
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+

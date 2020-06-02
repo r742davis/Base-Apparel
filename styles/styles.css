@@ -22,6 +22,16 @@
   width: 1440px;
   background: var(--linear-grad1); }
 
+@media (max-width: 1400px) {
+  .container {
+    width: auto; } }
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; } }
+
 .details {
   display: flex;
   flex-direction: column;
@@ -29,6 +39,28 @@
   width: 60%;
   padding: 5% 15% 10% 15%;
   background: url("../images/bg-pattern-desktop.svg"); }
+
+@media (max-width: 1000px) {
+  .details {
+    padding: 10%;
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red; } }
+
+.landing-picture img {
+  max-height: 100vh; }
+
+@media (max-width: 1000px) {
+  .landing-picture__desktop {
+    display: none; } }
+
+.landing-picture__mobile {
+  display: none; }
+
+@media (max-width: 375px) {
+  .landing-picture__mobile {
+    display: block; } }
 
 .description {
   height: auto; }

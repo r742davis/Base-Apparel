@@ -13,6 +13,14 @@
   display: flex;
   width: 1440px;
   background: var(--linear-grad1);
+  @include respond-to('xl') {
+    width: auto;
+  }
+  @include respond-to('medium') {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
 }
 
 .details {
@@ -22,11 +30,35 @@
   width: 60%;
   padding: 5% 15% 10% 15%;
   background: url("../images/bg-pattern-desktop.svg");
+  @include respond-to('medium') {
+    padding: 10%;
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+
+  }
 }
 
 .landing-picture {
-  // width: 40%;
+  img {
+  max-height: 100vh;
+  }
 }
+
+.landing-picture__desktop {
+  @include respond-to('medium') {
+    display: none;
+  }
+}
+
+.landing-picture__mobile {
+  display: none;
+  @include respond-to('mobile') {
+    display: block;
+  }
+}
+
 
 .description {
   height: auto;
