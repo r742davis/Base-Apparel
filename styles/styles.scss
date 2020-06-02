@@ -78,6 +78,10 @@
 
 .description {
   height: auto;
+  @include respond-to("medium") {
+    transition: 0.5s;
+    max-width: 600px;
+  }
   @include respond-to("mobile") {
     padding: 0 2rem 0 2rem;
     text-align: center;

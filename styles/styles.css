@@ -81,6 +81,11 @@
 .description {
   height: auto; }
 
+@media (max-width: 1000px) {
+  .description {
+    transition: 0.5s;
+    max-width: 600px; } }
+
 @media (max-width: 375px) {
   .description {
     padding: 0 2rem 0 2rem;
