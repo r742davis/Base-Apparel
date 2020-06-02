@@ -57,11 +57,11 @@
     background: none;
     padding: 0; } }
 
-.logo {
-  padding: 2rem 0 2rem 2rem; }
-
-.logo img {
-  width: 100px; }
+@media (max-width: 375px) {
+  .logo {
+    padding: 2rem 0 2rem 2rem; }
+  .logo img {
+    width: 100px; } }
 
 .landing-picture img {
   max-height: 100vh; }
