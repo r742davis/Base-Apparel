@@ -22,17 +22,17 @@
   width: 1440px;
   background: var(--linear-grad1); }
 
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .container {
     width: auto !important; } }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .container {
     flex-direction: column !important;
     align-items: center !important;
     height: 100vh !important; } }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .container {
     width: 100% !important;
     height: 800px !important; } }
@@ -45,19 +45,19 @@
   padding: 5% 15% 10% 15%;
   background: url("../images/bg-pattern-desktop.svg"); }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .details {
     padding: 10% !important;
     padding-top: 100px !important;
     width: 100% !important;
     height: 100vh !important; } }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .details {
     background: none !important;
     padding: 0 !important; } }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .logo {
     padding: 2rem 0 2rem 2rem !important; }
   .logo img {
@@ -66,14 +66,14 @@
 .landing-picture img {
   max-height: 100vh !important; }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .landing-picture__desktop {
     display: none !important; } }
 
 .landing-picture__mobile {
   display: none !important; }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .landing-picture__mobile {
     display: block !important;
     width: 100% !important; } }
@@ -81,12 +81,12 @@
 .description {
   height: auto; }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .description {
     transition: 0.5s !important;
     max-width: 600px !important; } }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .description {
     padding: 0 2rem 0 2rem !important;
     text-align: center !important; } }
@@ -105,7 +105,7 @@
 .description__header h1:nth-child(2), .description__header h1:nth-child(3) {
   margin-top: 10px; }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .description__header h1 {
     font-size: 2.4rem !important;
     letter-spacing: 0.75rem !important;
@@ -120,7 +120,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .description__intro-message {
     font-size: 0.8rem !important;
     line-height: 1.6rem !important; } }
@@ -141,7 +141,7 @@
 .description__main input[type="email"]::placeholder {
   color: var(--input); }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .description__main input[type="email"] {
     font-size: 0.8rem !important;
     height: 3rem !important; } }
@@ -183,7 +183,7 @@
   z-index: 2;
   opacity: 0; }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .description__main button[type="submit"]:after {
     top: -0.1rem !important;
     font-size: 0.5rem !important;
@@ -200,7 +200,7 @@
   position: relative;
   z-index: 3; }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .description__main button[type="submit"] {
     font-size: 0.5rem !important;
     width: 4.5rem !important;
@@ -218,7 +218,7 @@
   top: 20%;
   animation: jello-vertical 0.5s both; }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .description__error--active {
     top: 15% !important; } }
 
@@ -236,7 +236,7 @@
   animation: opacity 0.25s both;
   animation-delay: 0.5s; }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .description__error-message--active {
     text-align: left !important; } }
 
