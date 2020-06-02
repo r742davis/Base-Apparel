@@ -24,18 +24,18 @@
 
 @media (max-width: 1400px) {
   .container {
-    width: auto; } }
+    width: auto !important; } }
 
 @media (max-width: 1000px) {
   .container {
-    flex-direction: column;
-    align-items: center;
-    height: 100vh; } }
+    flex-direction: column !important;
+    align-items: center !important;
+    height: 100vh !important; } }
 
 @media (max-width: 500px) {
   .container {
-    width: 100%;
-    height: 800px; } }
+    width: 100% !important;
+    height: 800px !important; } }
 
 .details {
   display: flex;
@@ -47,49 +47,49 @@
 
 @media (max-width: 1000px) {
   .details {
-    padding: 10%;
-    padding-top: 100px;
-    width: 100%;
-    height: 100vh; } }
+    padding: 10% !important;
+    padding-top: 100px !important;
+    width: 100% !important;
+    height: 100vh !important; } }
 
 @media (max-width: 500px) {
   .details {
-    background: none;
-    padding: 0; } }
+    background: none !important;
+    padding: 0 !important; } }
 
 @media (max-width: 500px) {
   .logo {
-    padding: 2rem 0 2rem 2rem; }
+    padding: 2rem 0 2rem 2rem !important; }
   .logo img {
-    width: 100px; } }
+    width: 100px !important; } }
 
 .landing-picture img {
-  max-height: 100vh; }
+  max-height: 100vh !important; }
 
 @media (max-width: 1000px) {
   .landing-picture__desktop {
-    display: none; } }
+    display: none !important; } }
 
 .landing-picture__mobile {
-  display: none; }
+  display: none !important; }
 
 @media (max-width: 500px) {
   .landing-picture__mobile {
-    display: block;
-    width: 100%; } }
+    display: block !important;
+    width: 100% !important; } }
 
 .description {
   height: auto; }
 
 @media (max-width: 1000px) {
   .description {
-    transition: 0.5s;
-    max-width: 600px; } }
+    transition: 0.5s !important;
+    max-width: 600px !important; } }
 
 @media (max-width: 500px) {
   .description {
-    padding: 0 2rem 0 2rem;
-    text-align: center; } }
+    padding: 0 2rem 0 2rem !important;
+    text-align: center !important; } }
 
 .description__header h1 {
   font-size: 4rem;
@@ -107,12 +107,12 @@
 
 @media (max-width: 500px) {
   .description__header h1 {
-    font-size: 2.4rem;
-    letter-spacing: 0.75rem;
-    text-align: center;
-    margin-top: 4rem; }
+    font-size: 2.4rem !important;
+    letter-spacing: 0.75rem !important;
+    text-align: center !important;
+    margin-top: 4rem !important; }
   .description__header h1:nth-child(2), .description__header h1:nth-child(3) {
-    margin-top: 0; } }
+    margin-top: 0 !important; } }
 
 .description__intro-message {
   color: var(--red-desat);
@@ -122,8 +122,8 @@
 
 @media (max-width: 500px) {
   .description__intro-message {
-    font-size: 0.8rem;
-    line-height: 1.6rem; } }
+    font-size: 0.8rem !important;
+    line-height: 1.6rem !important; } }
 
 .description__input-container {
   position: relative; }
@@ -143,8 +143,8 @@
 
 @media (max-width: 500px) {
   .description__main input[type="email"] {
-    font-size: 0.8rem;
-    height: 3rem; } }
+    font-size: 0.8rem !important;
+    height: 3rem !important; } }
 
 [placeholder]:focus::-webkit-input-placeholder {
   transition: opacity 0.5s 0.5s ease;
@@ -185,10 +185,10 @@
 
 @media (max-width: 500px) {
   .description__main button[type="submit"]:after {
-    top: -0.1rem;
-    font-size: 0.5rem;
-    width: 4.5rem;
-    height: 3.1rem; } }
+    top: -0.1rem !important;
+    font-size: 0.5rem !important;
+    width: 4.5rem !important;
+    height: 3.1rem !important; } }
 
 .description__main button[type="submit"]:hover:after {
   opacity: 1;
@@ -202,9 +202,9 @@
 
 @media (max-width: 500px) {
   .description__main button[type="submit"] {
-    font-size: 0.5rem;
-    width: 4.5rem;
-    height: 3rem; } }
+    font-size: 0.5rem !important;
+    width: 4.5rem !important;
+    height: 3rem !important; } }
 
 .description__validation {
   border: 2px solid red; }
@@ -220,7 +220,7 @@
 
 @media (max-width: 500px) {
   .description__error--active {
-    top: 15%; } }
+    top: 15% !important; } }
 
 .description__error-message {
   opacity: 0;
@@ -238,7 +238,7 @@
 
 @media (max-width: 500px) {
   .description__error-message--active {
-    text-align: left; } }
+    text-align: left !important; } }
 
 @keyframes opacity {
   0% {

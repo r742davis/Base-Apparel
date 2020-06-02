@@ -14,17 +14,16 @@
   width: 1440px;
   background: var(--linear-grad1);
   @include respond-to("xl") {
-    width: auto;
+    width: auto !important;
   }
   @include respond-to("medium") {
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: 100vh !important;
   }
   @include respond-to("mobile") {
-    width: 100%;
-    height: 800px;
-    // border: 1px solid blue;
+    width: 100% !important;
+    height: 800px !important;
   }
 }
 
@@ -36,55 +35,55 @@
   padding: 5% 15% 10% 15%;
   background: url("../images/bg-pattern-desktop.svg");
   @include respond-to("medium") {
-    padding: 10%;
-    padding-top: 100px;
-    width: 100%;
-    height: 100vh;
+    padding: 10% !important;
+    padding-top: 100px !important;
+    width: 100% !important;
+    height: 100vh !important;
   }
   @include respond-to("mobile") {
-    background: none;
-    padding: 0;
+    background: none !important;
+    padding: 0 !important;
   }
 }
 
 .logo {
   @include respond-to('mobile') {
-    padding: 2rem 0 2rem 2rem;
+    padding: 2rem 0 2rem 2rem !important;
     img {
-      width: 100px;
+      width: 100px !important;
     }
   }
 }
 
 .landing-picture {
   img {
-    max-height: 100vh;
+    max-height: 100vh !important;
   }
 }
 
 .landing-picture__desktop {
   @include respond-to("medium") {
-    display: none;
+    display: none !important;
   }
 }
 
 .landing-picture__mobile {
-  display: none;
+  display: none !important;
   @include respond-to("mobile") {
-    display: block;
-    width: 100%;
+    display: block !important;
+    width: 100% !important;
   }
 }
 
 .description {
   height: auto;
   @include respond-to("medium") {
-    transition: 0.5s;
-    max-width: 600px;
+    transition: 0.5s !important;
+    max-width: 600px !important;
   }
   @include respond-to("mobile") {
-    padding: 0 2rem 0 2rem;
-    text-align: center;
+    padding: 0 2rem 0 2rem !important; 
+    text-align: center !important;
   }
 }
 
@@ -103,13 +102,13 @@
     margin-top: 10px;
   }
   @include respond-to("mobile") {
-    font-size: 2.4rem;
-    letter-spacing: 0.75rem;
-    text-align: center;
-    margin-top: 4rem;
+    font-size: 2.4rem !important;
+    letter-spacing: 0.75rem !important;
+    text-align: center !important;
+    margin-top: 4rem !important;
     &:nth-child(2),
     &:nth-child(3) {
-      margin-top: 0;
+      margin-top: 0 !important;
     }
   }
 }
@@ -120,8 +119,8 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   @include respond-to("mobile") {
-    font-size: 0.8rem;
-    line-height: 1.6rem;
+    font-size: 0.8rem !important;
+    line-height: 1.6rem !important;
   }
 }
 
@@ -142,8 +141,8 @@
     color: var(--input);
   }
   @include respond-to("mobile") {
-    font-size: 0.8rem;
-    height: 3rem;
+    font-size: 0.8rem !important;
+    height: 3rem !important;
   }
 }
 
@@ -184,10 +183,10 @@
     z-index: 2;
     opacity: 0;
     @include respond-to("mobile") {
-      top: -0.1rem;
-      font-size: 0.5rem;
-      width: 4.5rem;
-      height: 3.1rem;
+      top: -0.1rem !important;
+      font-size: 0.5rem !important;
+      width: 4.5rem !important;
+      height: 3.1rem !important;
     }
   }
   &:hover:after {
@@ -201,9 +200,9 @@
     z-index: 3;
   }
   @include respond-to("mobile") {
-    font-size: 0.5rem;
-    width: 4.5rem;
-    height: 3rem;
+    font-size: 0.5rem !important;
+    width: 4.5rem !important;
+    height: 3rem !important;
   }
 }
 
@@ -221,7 +220,7 @@
   top: 20%;
   animation: jello-vertical 0.5s both;
   @include respond-to("mobile") {
-    top: 15%;
+    top: 15% !important;
   }
 }
 
@@ -240,7 +239,7 @@
   animation: opacity 0.25s both;
   animation-delay: 0.5s;
   @include respond-to("mobile") {
-    text-align: left;
+    text-align: left !important;
   }
 }
 
